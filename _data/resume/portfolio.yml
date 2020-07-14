@@ -1,0 +1,191 @@
+- section: Académique
+  id: academic
+  projects:
+    - title: Projet intégrateur 3 - projet de conception d'un système informatique
+      display-title: Projet 3 - conception d'un système informatique
+      id: polymtl-projet-3
+      location: Montréal, Canada
+      period: janv. 2020 - avr. 2020
+      github: 
+      skills:
+      description:
+
+    - title: Projet intégrateur 2 - projet de logiciel d’application Web - Jeu des 7 différences
+      display-title: Projet 2 - jeu des 7 différences
+      id: polymtl-projet-2
+      location: Montréal, Canada
+      period: janv. 2019 - avr. 2019
+      github: polymtl-integrator-projects/tree/master/project-ii
+      skills:
+        - angular
+        - css3
+        - git
+        - html5
+        - mongodb
+        - nodejs
+        - typescript
+      description:
+        - Utiliser Git pour les échanges de codes en Typescript
+        - Se servir des technologies AngularJs et NodeJs
+        - Travailler en équipe de 6 sous la méthode Agile et Intégration Continue en plusieurs Sprints
+        - S’assurer du bon fonctionnement du code à travers des tests unitaires
+
+    - title: Projet intégrateur 1 - montage et programmation d’un robot mobile autonome
+      display-title: Projet 1 - robot mobile autonome
+      id: polymtl-projet-1
+      location: Montréal, Canada
+      period: janv. 2018 - avr. 2018
+      github: polymtl-integrator-projects/tree/master/project-i
+      skills:
+        - c
+        - cpp
+        - git
+      description:
+        - Comprendre, programmer un microcontrôleur Atmega324PA et le souder avec les autres composants sur les cartes, en suivant méthodiquement les instructions données
+        - Créer le code source de la bibliothèque et maintenir à travers Git pour les échanges de codes en C++ et régler les éventuels conflits Git
+        - Travailler en équipe de 4
+        - S’assurer du bon fonctionnement du code
+        - Présenter le projet à un jury et expliquer le fonctionnement du robot
+
+    - title: Projet ISN - VIAPIE
+      display-title: VIAPIE
+      id: isn-viapie
+      location: Papeete, Polynésie française
+      period: mars 2016 - mai 2016
+      github: isn-viapie
+      skills:
+        - arduino
+        - cpp
+        - python
+      description:
+        - Programmer une carte Arduino Uno, et le monter avec des modules externes, capteurs et roues sur la structure du robot
+        - Créer une interface graphique en Python compatible sur différentes plateformes capable d’interagir avec le robot par Bluetooth à travers une communication ordinateur-robot
+        - Présenter le projet à un jury et expliquer le fonctionnement du robot
+      images:
+        - name: isn-viapie-robot
+          type: jpg
+
+        - name: isn-viapie-app-login
+          type: png
+
+        - name: isn-viapie-app
+          type: png
+
+    - title: Simulation du phénomène de réfraction de la lumière
+      display-title: Réfraction de la lumière
+      id: isn-refraction-lumiere
+      location: Papeete, Polynésie française
+      period: déc. 2015 - janv. 2016
+      github: isn-light-refraction-simulation
+      skills:
+        - python
+      description:
+        - Programmer en procédant à une itération
+        - Créer une interface graphique en Python
+        - Utiliser un Canvas pour représenter le phénomène de réfraction de la lumière et ses cas particuliers
+      images:
+        - name: isn-refraction-lumiere-app
+          type: png
+
+- section: Développeur
+  id: developper
+  projects:
+    - title: jeandecian.ca
+      display-title: jeandecian.ca
+      id: jeandecian-ca
+      location: Montréal, Canada
+      period: nov. 2019 - ...
+      github: supernova
+      url: https://www.jeandecian.ca
+      skills:
+        - bootstrap
+        - css3
+        - html5
+        - jekyll
+        - ruby
+      description:
+        - Copie du projet jeandecian.github.io
+
+    - title: jeandecian.surge.sh
+      display-title: jeandecian.surge.sh
+      id: jeandecian-surge-sh
+      location: Montréal, Canada
+      period: nov. 2019 - ...
+      url: https://jeandecian.surge.sh
+      skills:
+        - gatsbyjs
+        - graphql
+      description:
+        - Se servir de Gatsby, basé sur React, pour générer un site web statique personnel
+
+    - title: jeandecian.github.io
+      display-title: jeandecian.github.io
+      id: jeandecian-github-io
+      location: Montréal, Canada
+      period: juil. 2019 - ...
+      github: jeandecian.github.io
+      url: https://jeandecian.github.io
+      skills:
+        - bootstrap
+        - css3
+        - html5
+        - jekyll
+        - ruby
+      description:
+        - Se servir de Jekyll pour générer un site web statique Curriculum Vitae
+
+    - title: Cours de langues de l'AEP
+      display-title: Cours de langues
+      id: step-langues
+      location: Montréal, Canada
+      period: août 2018 - ...
+      url: http://langues.aep.polymtl.ca
+      skills:
+        - codeigniter
+        - mysql
+        - php
+      description:
+        - Implémenter de nouvelles fonctionnalités
+
+    - title: Site du STEP
+      display-title: Site du STEP
+      id: step-site
+      location: Montréal, Canada
+      period: août 2017 - ...
+      url: https://infos.step.polymtl.ca
+      skills:
+        - symfony
+        - php
+      description:
+        - Mettre à jour le site
+
+- section: Hackathon
+  id: hackathon
+  projects:
+    - title: ConUHacks V
+      display-title: 
+      id: conuhacksv
+      location: Montréal, Canada
+      period: janv. 2020
+      url: 
+
+    - title: Hackatown 2020
+      display-title: SmartFridge
+      id: hackatown2020
+      location: Montréal, Canada
+      period: janv. 2020
+      url: https://devpost.com/software/smartfridge-x2fvzr
+
+    - title: Hackatown 2018 - QR Maps
+      display-title: QR Maps
+      id: hackatown2018
+      location: Montréal, Canada
+      period: janv. 2018
+      url: https://devpost.com/software/qr-maps
+
+    - title: RoboHacks 2017 - Wall-tagE
+      display-title: Wall-tagE
+      id: robohacks2017
+      location: Montréal, Canada
+      period: mars 2017
+      url: https://devpost.com/software/wall-tage

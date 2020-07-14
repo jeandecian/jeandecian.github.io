@@ -1,0 +1,51 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col one-half">
+        <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="fr_FR" data-type="horizontal" data-theme="light" data-vanity="jeandecian"><a class="LI-simple-link" href='https://ca.linkedin.com/in/jeandecian?trk=profile-badge'>Jean Decian</a></div>
+      </div>
+
+      <div class="footer-col one-half">
+        <h2 class="footer-heading">{{ site.title | escape }}</h2>
+        <p>{{- site.description | escape -}}</p>
+        <ul class="contact-list">
+          <li class="p-name">{%- if site.author -%}{{ site.author | escape }}{%- endif -%}</li>
+
+          {%- if site.email_personnal -%}
+          <li>Personnel : <a class="u-email" href="mailto:{{ site.email_personnal }}.earth">{{ site.email_personnal }}</a></li>
+          {%- endif -%}
+
+          {%- if site.email_school -%}
+          <li>Université : <a class="u-email" href="mailto:{{ site.email_school }}.earth">{{ site.email_school }}</a></li>
+          {%- endif -%}
+
+          {%- if site.email_work -%}
+          <li>Professionel : <a class="u-email" href="mailto:{{ site.email_work }}.earth">{{ site.email_work }}</a></li>
+          {%- endif -%}
+          <li>
+        </ul>
+      </div>
+
+      <div class="social-links">
+        {%- include social.html -%}
+      </div>
+
+      <div>
+        <br><p>Curriculum Vitae : 
+          <a target="_blank" href="/download/jeandecian_french_resume.pdf" class="btn btn-outline-primary" role="button">
+            <span class="fa fa-download"></span> Français
+          </a>
+          <a target="_blank" href="/download/jeandecian_english_resume.pdf" class="btn btn-outline-danger" role="button" style="color: #dc3545">
+          <span class="fa fa-download"></span> English
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>

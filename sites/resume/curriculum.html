@@ -1,0 +1,66 @@
+---
+layout: page
+title: CV
+permalink: /curriculum/
+---
+
+<h2>Formations</h2>
+<div class="row">
+    {% for education in site.data.resume.education %}
+    <div class="col-md-5" style="margin: 10px;">
+        <div class="container-fluid">
+            <div class="row top-row">
+                <div class="col">
+                    <h3>{{ education.study }}</h3>
+                </div>
+            </div>
+            <div class="row middle-row">
+                <div class="col"><p><span class="fas fa-school"></span> {{ education.school }}</p></div>
+                <div class="col"><p><span class="fas fa-map-pin"></span> {{ education.location }}</p></div>
+                <div class="col"><p><span class="far fa-calendar-alt"></span> {{ education.year }}</p></div>
+            </div>
+            <div class="row bottom-row">
+                <div class="col">
+                    {% for note in education.notes %}
+                    <p>{{ note }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<h2>Expériences</h2>
+<div class="row">
+    {% for experience in site.data.resume.experiences %}
+    <div class="col-md-5" style="margin: 10px;">
+        <div class="container-fluid">
+            <div class="row top-row">
+                <div class="col">
+                    <h3>{{ experience.title }}</h3>
+                </div>
+            </div>
+            <div class="row middle-row">
+                <div class="col"><p><span class="fas fa-briefcase"></span> <a href="{{ experience.employer-site }}" target="_blank">{{ experience.employer }}</a></p></div>
+                <div class="col"><p><span class="fas fa-map-pin"></span> {{ experience.location }}</p></div>
+                <div class="col"><p><span class="far fa-calendar-alt"></span> {{ experience.period }}</p></div>
+            </div>
+            <div class="row middle-row">
+                <div class="col">
+                    {% for element in experience.description %}
+                    <p>{{ element }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="row bottom-row">
+                <div class="col">
+                    {% for skill in experience.skills %}
+                    <img src="/assets/images/skills/{{ skill }}.svg" alt="{{ skill }}" title="{{ skill }}" width="65px">
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

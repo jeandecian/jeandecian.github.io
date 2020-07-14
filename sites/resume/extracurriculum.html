@@ -1,0 +1,37 @@
+---
+layout: page
+title: EXTRAS
+permalink: /extras/
+---
+
+<h2>Bénévolat</h2>
+
+<div class="row" style="text-align: center;">
+    {% for extra in site.data.resume.volunteering %}
+    <div class="col-md-5" style="margin: 10px;">
+        <div class="container-fluid">
+            <div class="row top-row">
+                <div class="col">
+                    <h3>{{ extra.event }}</h3>
+                </div>
+            </div>
+            <div class="row middle-row">
+                <div class="col"><p><span class=""></span> {{ extra.title }}</p></div>
+            </div>
+            <div class="row middle-row">
+                <div class="col"><p><span class=""></span> {{ extra.entity }}</p></div>
+            </div>
+            <div class="row middle-row">
+                <div class="col"><p><span class="far fa-calendar-alt"></span> {{ extra.period }}</p></div>
+            </div>
+            <div class="row bottom-row">
+                <div class="col">
+                    {% for task in extra.tasks %}
+                    <p>{{ task }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

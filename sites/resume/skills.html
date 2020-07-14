@@ -1,0 +1,24 @@
+---
+layout: page
+title: COMPÉTENCES
+permalink: /skills/
+---
+
+<div class="row" style="text-align: center;">
+    {% for skill in site.data.resume.skills.skills %}
+    <div class="col-md-3" style="margin: 10px;">
+        <div class="container-fluid">
+            <div class="row top-row">
+                <div class="col"><b>{{ skill.title }}</b></div>
+            </div>
+            <div class="row bottom-row">
+                <div class="col">
+                    {% for technology in skill.technologies %}
+                    <img src="/assets/images/skills/{{ technology }}.svg" alt="{{ technology }}" title="{{ technology }}" width="65px">
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

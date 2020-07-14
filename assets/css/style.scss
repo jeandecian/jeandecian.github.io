@@ -1,0 +1,89 @@
+---
+---
+
+@import "minima";
+
+.wrapper {
+  max-width: 85%;
+}
+
+.profile {
+  border-radius: 50%;
+  float: left;
+  padding: 5px;
+}
+
+.site-nav {
+  z-index: 1;
+}
+
+.page-link {
+  border: none;
+  display: inline-block;
+  height: 39px;
+}
+
+.page-link:hover {
+  background-color: #fdfdfd;
+  border-bottom: 2px solid black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: unset;
+}
+
+.container-fluid {
+  background-color: whitesmoke;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.top-row .col {
+  background-color: #424242;
+  border-radius: 10px 10px 0px 0px;
+  color: #fdfdfd;
+  padding: 8px;
+}
+
+.top-row h3 {
+  margin: 15px;
+}
+
+.abtn a {
+  color: black;
+}
+
+.noradius {
+  border-radius: 0px;
+}
+
+.abtn a:hover {
+  background-color: #424242;
+  color: #fdfdfd;
+}
+
+.middle-row .col {
+  border: 0px;
+  border-top: 0.5px solid darkgrey;
+}
+
+.middle-row p {
+  margin: 5px;
+}
+
+.bottom-row .col {
+  border-top: 0.5px solid darkgrey;
+  padding: 8px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.modal-dialog {
+  max-width: 888px;
+}

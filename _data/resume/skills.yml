@@ -1,0 +1,98 @@
+skills:
+  - title: Système de gestion de contenu
+    technologies:
+      - jekyll
+      - wordpress
+
+  - title: Base de données
+    technologies:
+      - graphql
+      - mongodb
+      - mysql
+
+  - title: Éditeur de code
+    technologies:
+      - visualstudiocode
+
+  - title: Système de composition de documents
+    technologies:
+      - latex
+      - overleaf
+
+  - title: Microsoft Office
+    technologies:
+      - excel
+      - powerpoint
+      - word
+
+  - title: Systèmes
+    technologies:
+      - linux
+      - macos
+      - windows
+
+  - title: Programmation
+    technologies:
+      - arduino
+      - c
+      - cpp
+      - java
+      - python
+      - r
+      - swift
+
+  - title: Langages web
+    technologies:
+      - html5
+      - javascript
+      - php
+      - ruby
+      - typescript
+
+  - title: Terminal
+    technologies:
+      - bash
+      - terminal
+      - vim
+
+  - title: Gestion de versions
+    technologies:
+      - git
+      - github
+      - gitlab
+
+  - title: Frameworks d'interface
+    technologies:
+      - bootstrap
+
+  - title: Frameworks Javascript
+    technologies:
+      - angular
+      - gatsbyjs
+      - nodejs
+
+  - title: Frameworks PHP
+    technologies:
+      - codeigniter
+      - laravel
+      - symfony
+
+  - title: Frameworks Python
+    technologies:
+      - flask
+
+  - title: Feuille de style
+    technologies:
+      - css3
+      - less
+      - sass
+
+languages:
+  - language: french
+    level: C1 - Autonome
+  - language: english
+    level: B2 - Avancé
+  - language: mandarin
+    level: B1 - Niveau seuil
+  - language: spanighs
+    level: A2 - Intermédiaire

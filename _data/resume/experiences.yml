@@ -1,0 +1,76 @@
+- title: Stagiaire de recherche en cyber-sécurité
+  employer: CRIM
+  employer-site: https://www.crim.ca/fr
+  location: Montréal, Canada
+  period: mai 2019 - ...
+  skills:
+    - css3
+    - html5
+    - java
+    - javascript
+    - latex
+    - mysql
+    - php
+    - python
+  description:
+    - "Équipe de recherche : Modélisation et Développement Logiciel avancé (MODL)"
+    - Sécurité des systèmes d’informations
+    - Sécurité dans l’internet des objets
+
+- title: Administrateur système
+  employer: AEP
+  employer-site: https://www.aep.polymtl.ca/
+  location: Montréal, Canada
+  period: févr. 2019 - ...
+  skills:
+  description:
+    - Fournir un support technique rapide et efficace en cas de soucis technique (STEP)
+
+- title: Vice-président communications
+  employer: STEP
+  employer-site: https://infos.step.polymtl.ca/
+  location: Montréal, Canada
+  period: nov. 2017 - ...
+  skills:
+  description:
+    - Gérer la communication externe à travers les réseaux sociaux du comité
+    - Tenir à jour les réseaux sociaux du comité et aviser la communauté polytechnicienne en cas d’avis urgent
+    - Créer les affiches des événements du comité
+
+- title: Secrétaire
+  employer: STEP
+  employer-site: https://infos.step.polymtl.ca/
+  location: Montréal, Canada
+  period: nov. 2017 - ...
+  skills:
+  description:
+    - S’assurer de la bonne organisation du comité
+    - Prendre en note les réunions du comité
+
+- title: Administrateur système
+  employer: STEP
+  employer-site: https://infos.step.polymtl.ca/
+  location: Montréal, Canada
+  period: août 2017 - ...
+  skills:
+    - codeigniter
+    - css3
+    - html5
+    - mysql
+    - php
+    - symfony
+  description:
+    - Développer des sites web sur différents frameworks
+    - Maintenir le bon fonctionnement d’une application web
+    - Satisfaire les demandes spécifiques de fonctionnalités des utilisateurs cibles
+
+- title: Stagiaire en recherche et développement
+  employer: ISI.PF
+  employer-site: https://www.isi.pf/
+  location: Papeete, Polynesie française
+  period: mai 2017 - juil. 2017
+  skills:
+    - gitlab
+    - laravel
+    - php
+    - wordpress
