@@ -5,7 +5,7 @@ git clone git@github.com:jeandecian/jeandecian.github.io.git
 
 # Installer les dépendances
 ```
-bundle install --path vendor/bundle
+bundle install
 ```
 
 # Lancer le projet
