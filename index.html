@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jean Decian</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
+      integrity="sha384-aQuvIWWIbpu/mSqULLDiUveyYiPoJzPKAWjUmGJ+Elm+N/LJhzfZqsutsfw870JS"
+      crossorigin="anonymous"
+    />
     <style>
       * {
         box-sizing: border-box;
@@ -46,6 +52,29 @@
         letter-spacing: 0.05em;
         color: #71717a;
       }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        padding-top: 4rem;
+        text-align: center;
+      }
+
+      .footer-flags {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .footer-flags .fi {
+        width: 19px;
+        height: auto;
+        aspect-ratio: 3 / 2;
+        border: 1px solid #e4e4e7;
+        border-radius: 1px;
+      }
     </style>
   </head>
   <body>
@@ -53,5 +82,14 @@
       <h1 id="name">Jean Decian</h1>
       <p id="status">Ph.D. Student in Computer Science</p>
     </header>
+    <footer>
+      <div class="footer-flags">
+        <span class="fi fi-cn" title="China"></span>
+        <span class="fi fi-pf" title="French Polynesia"></span>
+        <span class="fi fi-fr" title="France"></span>
+        <span class="fi fi-eu" title="European Union"></span>
+        <span class="fi fi-ca" title="Canada"></span>
+      </div>
+    </footer>
   </body>
 </html>
