@@ -75,6 +75,63 @@
         padding-bottom: 0.5rem;
       }
 
+      div[id$="-apps"] {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.25rem;
+        justify-content: start;
+      }
+
+      .card-node {
+        background: #ffffff;
+        border: 1px solid #e4e4e7;
+        border-radius: 8px;
+        padding: 1.5rem;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+        transition:
+          border-color 0.15s ease,
+          box-shadow 0.15s ease,
+          transform 0.15s ease;
+        height: 100%;
+      }
+
+      .card-node:hover {
+        border-color: #a1a1aa;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        transform: translateY(-1px);
+      }
+
+      .card-node.placeholder {
+        border-style: dashed;
+        background: transparent;
+        pointer-events: none;
+      }
+
+      .card-header-block {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card-route-title {
+        font-family: var(--font-mono);
+        font-weight: 600;
+        color: #111111;
+        font-size: 1.05rem;
+        letter-spacing: -0.02em;
+      }
+
+      .card-desc {
+        font-size: 0.85rem;
+        color: #52525b;
+        margin-top: 0.5rem;
+        line-height: 1.5;
+      }
+
       footer {
         display: flex;
         justify-content: center;
@@ -107,9 +164,25 @@
     <main>
       <section>
         <h2 id="foundations-title">Foundations</h2>
+        <div id="foundations-apps">
+          <div class="card-node placeholder">
+            <div class="card-header-block">
+              <span class="card-route-title">/foundation-app</span>
+            </div>
+            <p class="card-desc">Content loading. Please wait.</p>
+          </div>
+        </div>
       </section>
       <section>
         <h2 id="projects-title">Projects</h2>
+        <div id="projects-apps">
+          <div class="card-node placeholder">
+            <div class="card-header-block">
+              <span class="card-route-title">/project-app</span>
+            </div>
+            <p class="card-desc">Content loading. Please wait.</p>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
