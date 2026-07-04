@@ -194,5 +194,97 @@
         <span class="fi fi-ca" title="Canada"></span>
       </div>
     </footer>
+    <script>
+      (async function () {
+        const GITHUB_USERNAME = "jeandecian";
+        const sections = {
+          jeandecian: {
+            container: document.getElementById("foundations-apps"),
+            populated: false,
+          },
+          project: {
+            container: document.getElementById("projects-apps"),
+            populated: false,
+          },
+        };
+
+        try {
+          const response = await fetch(
+            `https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`,
+          );
+          if (!response.ok) throw new Error("Network response was not ok");
+          const repos = await response.json();
+
+          repos.forEach((repo) => {
+            if (repo.fork) return;
+
+            (repo.topics || []).forEach((topic) => {
+              const target = sections[topic];
+              if (target && target.container) {
+                if (!target.populated) {
+                  target.container.innerHTML = "";
+                  target.populated = true;
+                }
+                target.container.appendChild(createCardComponent(repo));
+              }
+            });
+          });
+
+          Object.values(sections).forEach((target) => {
+            if (!target.populated && target.container) {
+              target.container.innerHTML = `
+            <div class="card-node placeholder">
+              <div class="card-header-block">
+                <span class="card-route-title">/empty</span>
+              </div>
+              <p class="card-desc">No applications found.</p>
+            </div>`;
+            }
+          });
+        } catch (error) {
+          console.error("Error:", error);
+          displayErrorState();
+        }
+
+        function createCardComponent(repo) {
+          const anchor = document.createElement("a");
+          anchor.href = `https://${GITHUB_USERNAME}.github.io/${repo.name}`;
+          anchor.target = "_blank";
+          anchor.className = "card-node";
+
+          const headerBlock = document.createElement("div");
+          headerBlock.className = "card-header-block";
+
+          const route = document.createElement("span");
+          route.className = "card-route-title";
+          route.textContent = `/${repo.name}`;
+          headerBlock.appendChild(route);
+          anchor.appendChild(headerBlock);
+
+          if (repo.description) {
+            const desc = document.createElement("p");
+            desc.className = "card-desc";
+            desc.textContent = repo.description;
+            anchor.appendChild(desc);
+          }
+
+          return anchor;
+        }
+
+        function displayErrorState() {
+          const errorCardMarkup = `
+        <div class="card-node placeholder" style="border-color: #f43f5e;">
+          <div class="card-header-block">
+            <span class="card-route-title" style="color: #e11d48;">/error</span>
+          </div>
+          <p class="card-desc">Failed to load applications. Try again later.</p>
+        </div>`;
+
+          Object.values(sections).forEach((target) => {
+            if (target.container) target.container.innerHTML = errorCardMarkup;
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
