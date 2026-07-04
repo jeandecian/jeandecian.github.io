@@ -53,6 +53,35 @@
         color: #71717a;
       }
 
+      .header-links {
+        margin-top: 1.75rem;
+        display: flex;
+        justify-content: center;
+      }
+
+      .head-link-box {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #71717a;
+        text-decoration: none;
+        border: 1px solid #e4e4e7;
+        padding: 0.35rem 0.75rem;
+        border-radius: 4px;
+        background: #ffffff;
+        transition: all 0.15s ease;
+      }
+
+      .head-link-box:hover {
+        border-color: #a1a1aa;
+        color: #111111;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+      }
+
       main {
         width: 100%;
         max-width: 1040px;
@@ -160,6 +189,15 @@
     <header>
       <h1 id="name">Jean Decian</h1>
       <p id="status">Ph.D. Student in Computer Science</p>
+      <div class="header-links">
+        <a
+          href="https://linkedin.com/in/jeandecian"
+          target="_blank"
+          class="head-link-box"
+        >
+          <span>LinkedIn</span>
+        </a>
+      </div>
     </header>
     <main>
       <section>
